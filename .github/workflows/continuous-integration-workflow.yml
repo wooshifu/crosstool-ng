@@ -60,7 +60,7 @@ jobs:
         ]
         sample: [
           "aarch64-unknown-linux-gnu",
-          "aarch64-unknown-elf",
+          #"aarch64-unknown-elf",
           #"arc-multilib-linux-uclibc",
           #"arm-picolibc-eabi",
           "arm-unknown-linux-gnueabi",
