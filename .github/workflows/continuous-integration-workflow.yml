@@ -121,7 +121,7 @@ jobs:
           sed -i -e '/CT_PREFIX_DIR/s/HOME/CT_TOP_DIR/' .config
           ct-ng build
       - name: 'Tar files'
-        run: tar -cvf build.tar /Users/runner/work/crosstool-ng/crosstool-ng/x-tools          
+        run: tar -cvf build-${{ matrix.sample }}.tar /Users/runner/work/crosstool-ng/crosstool-ng/x-tools          
       - name: "upload log"
         uses: actions/upload-artifact@v2
         with:
